@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurology Products | Cipher Meditech LLP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon-svg" viewBox="0 0 60 60" width="40" height="40">
+                    <rect x="8" y="8" width="44" height="44" transform="rotate(45 30 30)" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                    <path d="M38 20C38 20 42 24 42 30C42 36 38 40 32 40C26 40 22 36 22 30" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none"/>
+                </svg>
+                <span class="logo-text">CIPHER<span class="logo-accent">MEDITECH</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products" class="active">Products</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#careers">Careers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+        <div class="category-hero-bg"></div>
+        <div class="section-container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="index.html#products">Products</a>
+                <span>/</span>
+                <span class="current">Neurology</span>
+            </div>
+            <h1 class="category-title">Neurology</h1>
+            <p class="category-subtitle">Diagnostic & Therapeutic Neurological Devices</p>
+            <p class="category-description">
+                Comprehensive range of neurological diagnostic and therapeutic devices. Our portfolio includes 
+                EEG systems, EMG equipment, nerve stimulators, and advanced neurodiagnostic solutions 
+                for accurate diagnosis and treatment of neurological conditions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Listing -->
+    <section class="category-products">
+        <div class="section-container">
+            <div class="products-header">
+                <div class="products-count">
+                    <span class="count-number">10</span> Products
+                </div>
+                <div class="products-filter">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy">
+                        <option value="name">Name A-Z</option>
+                        <option value="name-desc">Name Z-A</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product Item 1 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><path d="M16 32h8l4-12 8 24 4-12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Digital EEG System</h3>
+                        <p class="product-desc">Multi-channel electroencephalography system for brain activity monitoring and epilepsy diagnosis</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 2 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><path d="M20 20v24M28 16v32M36 20v24M44 24v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">EMG/NCV System</h3>
+                        <p class="product-desc">Electromyography and nerve conduction velocity measurement system</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 3 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="16" stroke="currentColor" stroke-width="2"/><path d="M32 16v8M32 40v8M16 32h8M40 32h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Transcranial Doppler</h3>
+                        <p class="product-desc">Non-invasive cerebral blood flow monitoring system</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 4 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><rect x="20" y="20" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/><path d="M28 28h8M28 36h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M32 12v8M32 44v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Evoked Potential System</h3>
+                        <p class="product-desc">Visual, auditory, and somatosensory evoked potential testing equipment</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 5 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="32" rx="12" ry="16" stroke="currentColor" stroke-width="2"/><path d="M20 32h24" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="4" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Deep Brain Stimulator</h3>
+                        <p class="product-desc">Implantable neurostimulation system for Parkinson's and movement disorders</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 6 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><path d="M24 16c-4 8-4 24 0 32M40 16c4 8 4 24 0 32M24 32h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Peripheral Nerve Stimulator</h3>
+                        <p class="product-desc">Therapeutic nerve stimulation device for chronic pain management</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 7 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><rect x="16" y="20" width="32" height="24" rx="4" stroke="currentColor" stroke-width="2"/><path d="M24 28h16M24 36h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M32 44v8M28 52h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Video EEG Monitoring</h3>
+                        <p class="product-desc">Long-term video EEG monitoring system for epilepsy evaluation</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 8 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="2"/><path d="M20 36h24l-4 16H24l-4-16z" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">TMS System</h3>
+                        <p class="product-desc">Transcranial magnetic stimulation device for depression and neurological research</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 9 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><path d="M16 32h8l4-8 8 16 4-8h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="16" r="6" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sleep Study System</h3>
+                        <p class="product-desc">Polysomnography equipment for comprehensive sleep disorder diagnosis</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <!-- Product Item 10 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2"/><path d="M32 20v-8M32 52v-8M20 32h-8M52 32h-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">VNS Therapy System</h3>
+                        <p class="product-desc">Vagus nerve stimulation system for drug-resistant epilepsy treatment</p>
+                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="category-cta">
+        <div class="section-container">
+            <div class="cta-content">
+                <h2>Need More Information?</h2>
+                <p>Contact our team to discuss your neurology device requirements or request a product demonstration.</p>
+                <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <svg class="logo-icon-svg" viewBox="0 0 60 60" width="36" height="36">
+                            <rect x="8" y="8" width="44" height="44" transform="rotate(45 30 30)" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                            <path d="M38 20C38 20 42 24 42 30C42 36 38 40 32 40C26 40 22 36 22 30" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none"/>
+                        </svg>
+                        <span class="logo-text">CIPHER<span class="logo-accent">MEDITECH</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Decoding Healthcare — Your trusted partner for quality medical devices and healthcare solutions.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#products">Products</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#careers">Careers</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Product Categories</h4>
+                        <ul>
+                            <li><a href="ent.html">ENT</a></li>
+                            <li><a href="neurosurgery.html">Neuro Surgery</a></li>
+                            <li><a href="neurology.html">Neurology</a></li>
+                            <li><a href="neurovascular.html">Neuro-Vascular</a></li>
+                            <li><a href="spinal-ortho.html">Spinal & Orthopaedic</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>+91 9902096645</li>
+                            <li>rs.sales@ciphermeditech.com</li>
+                            <li>Bangalore, Karnataka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cipher Meditech LLP. All rights reserved.</p>
+                <p class="footer-legal">Licensed Medical Devices Distributor</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
