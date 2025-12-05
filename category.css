@@ -3,6 +3,67 @@
    Product listing pages for each category
    ================================ */
 
+/* Filter Section */
+.filter-section {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.filter-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border: 1px solid var(--color-gray-200);
+    background: var(--color-white);
+    color: var(--color-gray-600);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background: rgba(26, 68, 112, 0.05);
+}
+
+.filter-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.product-item.hidden {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .filter-buttons {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 8px 14px;
+        font-size: 0.8125rem;
+    }
+}
+
 /* Category Hero */
 .category-hero {
     position: relative;
@@ -154,12 +215,26 @@
 
 .product-image {
     aspect-ratio: 4/3;
-    background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-gray-100) 100%);
+    background: #ffffff !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-xl);
+    padding: 12px;
     border-bottom: 1px solid var(--color-gray-100);
+    overflow: hidden;
+}
+
+.product-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+    display: block;
+    background: #ffffff;
+}
+
+.product-item:hover .product-card-image {
+    transform: scale(1.05);
 }
 
 .product-placeholder {

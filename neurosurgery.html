@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuro Surgery Products | Cipher Meditech LLP</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="category.css?v=3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -15,11 +15,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <svg class="logo-icon-svg" viewBox="0 0 60 60" width="40" height="40">
-                    <rect x="8" y="8" width="44" height="44" transform="rotate(45 30 30)" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-                    <path d="M38 20C38 20 42 24 42 30C42 36 38 40 32 40C26 40 22 36 22 30" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none"/>
-                </svg>
-                <span class="logo-text">CIPHER<span class="logo-accent">MEDITECH</span></span>
+                <img src="logo.png" alt="Cipher Meditech" class="logo-img" style="display: block !important; height: 50px; width: auto;">
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -51,8 +47,8 @@
             <p class="category-subtitle">Advanced Neurosurgical Instruments & Equipment</p>
             <p class="category-description">
                 State-of-the-art neurosurgical devices for brain and spinal cord procedures. 
-                Our portfolio includes cranial fixation systems, powered instruments, microsurgical tools, 
-                and innovative solutions for complex neurosurgical interventions.
+                Our portfolio includes drill systems, navigation systems, and nerve monitoring 
+                equipment from leading manufacturers.
             </p>
         </div>
     </section>
@@ -60,9 +56,19 @@
     <!-- Products Listing -->
     <section class="category-products">
         <div class="section-container">
+            <div class="filter-section">
+                <div class="filter-label">Filter by Product Group:</div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="drill-system">Drill System</button>
+                    <button class="filter-btn" data-filter="neuro-navigation">Neuro Navigation</button>
+                    <button class="filter-btn" data-filter="nerve-monitoring">Nerve Monitoring</button>
+                </div>
+            </div>
+
             <div class="products-header">
                 <div class="products-count">
-                    <span class="count-number">10</span> Products
+                    <span class="count-number">11</span> Products
                 </div>
                 <div class="products-filter">
                     <label for="sortBy">Sort by:</label>
@@ -75,144 +81,150 @@
             </div>
 
             <div class="products-grid">
-                <!-- Product Item 1 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="28" r="16" stroke="currentColor" stroke-width="2"/><path d="M20 44h24M28 44v8M36 44v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <!-- Drill System Products -->
+                <div class="product-item" data-group="drill-system">
+                    <a href="products/neurosurgery/saw-system-web.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/saw_system_web.png" alt="Saw System Web" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Cranial Fixation System</h3>
-                        <p class="product-desc">Comprehensive titanium fixation system for cranial reconstruction and bone flap fixation</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Saw System Web</h3>
+                            <p class="product-desc">Advanced web blade saw system for precise bone cutting in neurosurgical procedures</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 2 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><rect x="28" y="8" width="8" height="48" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="16" r="4" stroke="currentColor" stroke-width="2"/></svg>
+                <div class="product-item" data-group="drill-system">
+                    <a href="products/neurosurgery/saw-reciprocating.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/saw_reciprocating.png" alt="Saw Reciprocating" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">High-Speed Neurosurgical Drill</h3>
-                        <p class="product-desc">Precision pneumatic drill system for craniotomy and skull base procedures</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Saw Reciprocating</h3>
+                            <p class="product-desc">High-precision reciprocating saw for controlled bone cutting and craniotomy</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 3 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="16" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="6" stroke="currentColor" stroke-width="2"/><path d="M32 16v6M32 42v6" stroke="currentColor" stroke-width="2"/></svg>
+                <div class="product-item" data-group="drill-system">
+                    <a href="products/neurosurgery/saw-oscillating.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/saw_oscillating.png" alt="Saw Oscillating" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Neurosurgical Microscope</h3>
-                        <p class="product-desc">Advanced surgical microscope with high magnification for delicate brain surgery</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Saw Oscillating</h3>
+                            <p class="product-desc">Oscillating saw for smooth, precise cuts in neurosurgical bone procedures</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 4 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><path d="M20 20h24v24H20z" stroke="currentColor" stroke-width="2"/><path d="M28 12v8M36 12v8M28 44v8M36 44v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <div class="product-item" data-group="drill-system">
+                    <a href="products/neurosurgery/neuro-mr7-pneumatic.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/neuro_mr7.png" alt="Neuro MR7 Pneumatic" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Stereotactic Frame System</h3>
-                        <p class="product-desc">Precision stereotactic system for targeted brain biopsies and lesioning</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Neuro MR7 Pneumatic</h3>
+                            <p class="product-desc">High-speed pneumatic drill system for craniotomy and skull base surgery</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 5 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><path d="M32 12v40M24 20h16M24 32h16M24 44h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <div class="product-item" data-group="drill-system">
+                    <a href="products/neurosurgery/neuro-mr7-attachments.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/mr7_attachments.png" alt="Neuro MR7 Attachments" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">VP Shunt System</h3>
-                        <p class="product-desc">Programmable ventriculoperitoneal shunt for hydrocephalus management</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Neuro MR7 Attachments</h3>
+                            <p class="product-desc">Comprehensive range of attachments and accessories for MR7 drill system</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 6 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="32" rx="20" ry="12" stroke="currentColor" stroke-width="2"/><path d="M32 20v24" stroke="currentColor" stroke-width="2"/></svg>
+                <div class="product-item" data-group="drill-system">
+                    <a href="products/neurosurgery/ipc-electrical-console.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/electricalConsole.png" alt="IPC Electrical Console" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Dura Substitute</h3>
-                        <p class="product-desc">Synthetic dura mater substitute for duraplasty procedures</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">IPC Electrical Console</h3>
+                            <p class="product-desc">Integrated power console for electrical neurosurgical instruments</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 7 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><path d="M16 32h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="32" r="4" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="32" r="4" stroke="currentColor" stroke-width="2"/></svg>
+                <div class="product-item" data-group="drill-system">
+                    <a href="products/neurosurgery/electric-stylus.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/stylus.png" alt="Electric Stylus" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Microsurgical Instrument Set</h3>
-                        <p class="product-desc">Complete set of micro scissors, forceps, and dissectors for microsurgery</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Electric Stylus</h3>
+                            <p class="product-desc">Precision electric stylus for controlled neurosurgical cutting and dissection</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 8 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><rect x="20" y="16" width="24" height="32" rx="4" stroke="currentColor" stroke-width="2"/><path d="M28 24h8M28 32h8M28 40h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <!-- Neuro Navigation Products -->
+                <div class="product-item" data-group="neuro-navigation">
+                    <a href="products/neurosurgery/oarm.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/oarm.png" alt="O-arm Imaging System" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Neuronavigation System</h3>
-                        <p class="product-desc">Image-guided surgical navigation for precise tumor localization</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">O-arm® Imaging System</h3>
+                            <p class="product-desc">Intraoperative 2D/3D imaging system for real-time surgical navigation - Medtronic</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 9 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="2"/><path d="M24 36v12h16V36" stroke="currentColor" stroke-width="2"/></svg>
+                <div class="product-item" data-group="neuro-navigation">
+                    <a href="products/neurosurgery/stealthstation-s8.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/stealths8.png" alt="StealthStation S8" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Cranial Access Kit</h3>
-                        <p class="product-desc">Complete kit for emergency cranial access and burr hole procedures</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">StealthStation™ S8</h3>
+                            <p class="product-desc">Advanced surgical navigation platform for precise neurosurgical procedures - Medtronic</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Product Item 10 -->
-                <div class="product-item">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <svg viewBox="0 0 64 64" fill="none"><path d="M16 20l16 12-16 12M32 20l16 12-16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <!-- Nerve Monitoring Products -->
+                <div class="product-item" data-group="nerve-monitoring">
+                    <a href="products/neurosurgery/nim-eclipse-e2.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/eclipse2.png" alt="NIM-Eclipse E2" class="product-card-image" style="background: #ffffff;">
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Ultrasonic Aspirator</h3>
-                        <p class="product-desc">Ultrasonic surgical device for precise tumor debulking</p>
-                        <a href="index.html#contact" class="product-enquiry">Enquire Now →</a>
-                    </div>
+                        <div class="product-info">
+                            <h3 class="product-name">NIM-Eclipse® E2</h3>
+                            <p class="product-desc">Next-generation multi-modality intraoperative neurophysiological monitoring system</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product-item" data-group="nerve-monitoring">
+                    <a href="products/neurosurgery/nim-eclipse.html" class="product-link">
+                        <div class="product-image" style="background: #ffffff;">
+                            <img src="products/neurosurgery/eclipse.png" alt="NIM-Eclipse System" class="product-card-image" style="background: #ffffff;">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">NIM-Eclipse® System</h3>
+                            <p class="product-desc">Comprehensive IONM platform for EMG, SSEPs, MEPs, and EEG monitoring</p>
+                            <span class="product-enquiry">View Details →</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -235,11 +247,7 @@
             <div class="footer-main">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <svg class="logo-icon-svg" viewBox="0 0 60 60" width="36" height="36">
-                            <rect x="8" y="8" width="44" height="44" transform="rotate(45 30 30)" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-                            <path d="M38 20C38 20 42 24 42 30C42 36 38 40 32 40C26 40 22 36 22 30" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none"/>
-                        </svg>
-                        <span class="logo-text">CIPHER<span class="logo-accent">MEDITECH</span></span>
+                        <img src="logo.png" alt="Cipher Meditech" class="logo-img logo-img-sm">
                     </a>
                     <p class="footer-tagline">
                         Decoding Healthcare — Your trusted partner for quality medical devices and healthcare solutions.
@@ -284,6 +292,40 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Product Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productItems = document.querySelectorAll('.product-item');
+            const productCount = document.querySelector('.count-number');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+                    let visibleCount = 0;
+
+                    productItems.forEach(item => {
+                        if (filterValue === 'all') {
+                            item.classList.remove('hidden');
+                            visibleCount++;
+                        } else if (item.getAttribute('data-group') === filterValue) {
+                            item.classList.remove('hidden');
+                            visibleCount++;
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+
+                    // Update product count
+                    productCount.textContent = visibleCount;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-

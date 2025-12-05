@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIM-Eclipse® System | Neuro Surgery | Cipher Meditech LLP</title>
+    <link rel="stylesheet" href="../../styles.css?v=3">
+    <link rel="stylesheet" href="../../category.css?v=3">
+    <link rel="stylesheet" href="../../product.css?v=5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="product-page">
+    <nav class="navbar navbar-dark" id="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo"><img src="../../logo.png" alt="Cipher Meditech" class="logo-img"></a>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#products" class="active">Products</a></li>
+                <li><a href="../../index.html#about">About</a></li>
+                <li><a href="../../index.html#careers">Careers</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <section class="product-hero">
+        <div class="section-container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a><span>/</span>
+                <a href="../../neurosurgery.html">Neuro Surgery</a><span>/</span>
+                <span class="current">NIM-Eclipse® System</span>
+            </div>
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div class="product-main-image">
+                        <img src="eclipse.png" alt="NIM-Eclipse System" class="main-product-image" id="mainProductImage">
+                        <div class="zoom-hint">Click to zoom</div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category-tag">Neuro Surgery - Nerve Monitoring</span>
+                    <h1 class="product-title">NIM-Eclipse® System</h1>
+                    <p class="product-subtitle">Comprehensive IONM platform for EMG, SSEPs, MEPs, and EEG monitoring during surgery.</p>
+                    <div class="product-meta">
+                        <div class="meta-item"><span class="meta-label">Category</span><span class="meta-value">Nerve Monitoring</span></div>
+                        <div class="meta-item"><span class="meta-label">Modalities</span><span class="meta-value">Multi-modality</span></div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="../../index.html#contact" class="btn btn-primary">Request Quote</a>
+                        <a href="../../index.html#contact" class="btn btn-outline">Download Brochure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-description-section">
+        <div class="section-container">
+            <div class="description-grid">
+                <div class="description-content">
+                    <h2>Product Overview</h2>
+                    <p>The NIM-Eclipse® System is a comprehensive intraoperative neurophysiological monitoring platform that provides real-time feedback on neural pathway integrity during surgery.</p>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Multi-modality monitoring capabilities</li>
+                        <li>EMG for nerve function</li>
+                        <li>SSEPs for sensory pathways</li>
+                        <li>MEPs for motor pathways</li>
+                        <li>EEG for cortical activity</li>
+                        <li>High-resolution display</li>
+                    </ul>
+                    <h3>Clinical Applications</h3>
+                    <ul>
+                        <li>Spine surgery</li>
+                        <li>Cranial surgery</li>
+                        <li>Peripheral nerve surgery</li>
+                        <li>Vascular surgery</li>
+                    </ul>
+                </div>
+                <div class="specifications-card">
+                    <h3>Technical Specifications</h3>
+                    <div class="spec-list">
+                        <div class="spec-item"><span class="spec-name">Channels</span><span class="spec-value">Multiple</span></div>
+                        <div class="spec-item"><span class="spec-name">Modalities</span><span class="spec-value">EMG/SSEP/MEP/EEG</span></div>
+                        <div class="spec-item"><span class="spec-name">Display</span><span class="spec-value">Large format</span></div>
+                        <div class="spec-item"><span class="spec-name">Data Export</span><span class="spec-value">USB/Network</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-cta-banner">
+        <div class="section-container">
+            <h2>Interested in This Product?</h2>
+            <p>Contact our team for pricing and demonstrations.</p>
+            <a href="../../index.html#contact" class="btn btn-primary">Contact Us Today</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand"><a href="../../index.html" class="logo"><img src="../../logo.png" alt="Cipher Meditech" class="logo-img logo-img-sm"></a><p class="footer-tagline">Decoding Healthcare</p></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Cipher Meditech LLP.</p></div>
+        </div>
+    </footer>
+
+    <div class="zoom-overlay" id="zoomOverlay">
+        <button class="zoom-close" id="zoomClose">&times;</button>
+        <img src="eclipse.png" alt="NIM-Eclipse System" class="zoom-image">
+    </div>
+
+    <script src="../../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainImg = document.getElementById('mainProductImage');
+            const overlay = document.getElementById('zoomOverlay');
+            const closeBtn = document.getElementById('zoomClose');
+            if (mainImg && overlay) {
+                mainImg.addEventListener('click', () => { overlay.classList.add('active'); document.body.style.overflow = 'hidden'; });
+                const closeZoom = () => { overlay.classList.remove('active'); document.body.style.overflow = ''; };
+                closeBtn.addEventListener('click', closeZoom);
+                overlay.addEventListener('click', (e) => { if (e.target === overlay) closeZoom(); });
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeZoom(); });
+            }
+        });
+    </script>
+</body>
+</html>
+

@@ -169,41 +169,27 @@ h4 { font-size: 1.125rem; }
 .logo {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
-    font-family: var(--font-body);
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
 }
 
-.logo-icon-svg {
-    color: var(--color-primary);
-    flex-shrink: 0;
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block !important;
 }
 
-.logo-text {
-    color: var(--color-primary);
+.logo-img-sm {
+    height: 40px;
 }
 
-.logo-accent {
-    display: block;
-    font-size: 0.7em;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    color: var(--color-gray-400);
-    margin-top: -2px;
+/* Make logo white on dark backgrounds (hero/navbar before scroll) */
+.navbar:not(.scrolled) .logo-img {
+    filter: brightness(0) invert(1);
 }
 
-.navbar:not(.scrolled) .logo-icon-svg {
-    color: var(--color-white);
-}
-
-.navbar:not(.scrolled) .logo-text {
-    color: var(--color-white);
-}
-
-.navbar:not(.scrolled) .logo-accent {
-    color: rgba(255, 255, 255, 0.6);
+.footer .logo-img {
+    filter: brightness(0) invert(1);
+    height: 45px;
 }
 
 .nav-links {
@@ -351,6 +337,25 @@ h4 { font-size: 1.125rem; }
     max-width: 900px;
     text-align: center;
     animation: fadeUp 1s ease-out;
+}
+
+.hero-logo {
+    margin-bottom: var(--space-xl);
+    animation: fadeUp 1s ease-out 0.05s both;
+}
+
+.hero-logo-img {
+    height: 140px;
+    width: auto;
+    margin: 0 auto;
+    display: block !important;
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+    .hero-logo-img {
+        height: 100px;
+    }
 }
 
 @keyframes fadeUp {
@@ -883,9 +888,10 @@ h4 { font-size: 1.125rem; }
     text-align: center;
 }
 
-.frame-logo {
+.frame-logo-img {
     display: block;
-    color: var(--color-primary);
+    width: 120px;
+    height: auto;
     margin: 0 auto var(--space-lg);
 }
 
@@ -965,9 +971,10 @@ h4 { font-size: 1.125rem; }
 }
 
 .careers-benefits {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-md);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: var(--space-lg) var(--space-xl);
     margin-top: var(--space-xl);
 }
 
@@ -1056,7 +1063,8 @@ h4 { font-size: 1.125rem; }
 
 @media (max-width: 768px) {
     .careers-benefits {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: var(--space-md);
     }
 }
 
