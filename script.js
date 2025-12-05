@@ -128,46 +128,52 @@ function initScrollAnimations() {
 }
 
 /**
- * Contact form handling
+ * Contact form handling - Opens email client with pre-filled data
  */
 function initContactForm() {
     const form = document.getElementById('contactForm');
     
     if (form) {
-        form.addEventListener('submit', async (e) => {
+        form.addEventListener('submit', (e) => {
             e.preventDefault();
-            
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            
-            // Show loading state
-            submitBtn.innerHTML = `
-                <span>Sending...</span>
-                <svg class="spinner" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-dasharray="32" stroke-linecap="round">
-                        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
-                    </circle>
-                </svg>
-            `;
-            submitBtn.disabled = true;
             
             // Collect form data
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
             
-            // Simulate form submission (replace with actual API call)
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            // Build email body
+            const subject = `Inquiry from ${data.name} - Cipher Meditech Website`;
+            const body = `Hello Cipher Meditech Team,
+
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Organization: ${data.organization || 'Not provided'}
+
+Message:
+${data.message}
+
+---
+Sent from Cipher Meditech website contact form`;
+
+            // Create mailto link and open email client
+            const mailtoLink = `mailto:rs.sales@ciphermeditech.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             
-            // Show success message
-            showNotification('Thank you for your message! We will get back to you soon.', 'success');
+            // Try multiple methods to open email
+            const mailWindow = window.open(mailtoLink, '_self');
             
-            // Reset form
-            form.reset();
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
+            // Fallback if window.open doesn't work
+            if (!mailWindow) {
+                window.location.href = mailtoLink;
+            }
             
-            // Log form data (for development)
-            console.log('Form submitted:', data);
+            // Show notification
+            showNotification('Opening your email client...', 'success');
+            
+            // Reset form after a short delay
+            setTimeout(() => {
+                form.reset();
+            }, 1000);
         });
 
         // Input validation feedback
