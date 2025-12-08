@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+    .circle-bullets{
+        list-style-type: circle;
+    }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O-arm® Imaging System | Neuro Surgery | Cipher Meditech LLP</title>
@@ -30,21 +35,28 @@
             <div class="breadcrumb">
                 <a href="../../index.html">Home</a><span>/</span>
                 <a href="../../neurosurgery.html">Neuro Surgery</a><span>/</span>
-                <span class="current">O-arm® Imaging System</span>
+                <span class="current">O-arm™ surgical imaging system</span>
             </div>
             <div class="product-layout">
                 <div class="product-gallery">
-                    <div class="product-main-image">
-                        <img src="oarm.png" alt="O-arm Imaging System" class="main-product-image" id="mainProductImage">
-                        <div class="zoom-hint">Click to zoom</div>
+                    <div class="product-main-image zoomable" onclick="openImageModal('oarm.png')">
+                        <img src="oarm.png" alt="O-arm™ surgical imaging system" class="product-actual-image">
+                        <div class="zoom-hint">
+                            <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                                <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11 8v6M8 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Click to zoom</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-details">
                     <span class="product-category-tag">Neuro Surgery - Navigation</span>
-                    <h1 class="product-title">O-arm® Imaging System</h1>
-                    <p class="product-subtitle">Intraoperative 2D/3D imaging system for real-time surgical navigation by Medtronic.</p>
+                    <h1 class="product-title">O-arm™ surgical imaging system</h1>
+                    <p class="product-subtitle">The O-arm™ surgical imaging system offers on-demand imaging, robotic positioning, and device mobility for spinal and cranial procedures.</p>
                     <div class="product-meta">
-                        <div class="meta-item"><span class="meta-label">Category</span><span class="meta-value">Neuro Navigation</span></div>
+                        <div class="meta-item"><span class="meta-label">Category</span><span class="meta-value">Surgical Imaging</span></div>
                         <div class="meta-item"><span class="meta-label">Manufacturer</span><span class="meta-value">Medtronic</span></div>
                     </div>
                     <div class="product-actions">
@@ -59,34 +71,30 @@
         <div class="section-container">
             <div class="description-grid">
                 <div class="description-content">
-                    <h2>Product Overview</h2>
-                    <p>The O-arm® Imaging System provides high-quality 2D fluoroscopy and 3D imaging in the operating room. Its unique O-shaped gantry allows imaging without repositioning the patient.</p>
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>2D fluoroscopy and 3D cone beam CT</li>
-                        <li>360° imaging capability</li>
-                        <li>Integration with StealthStation navigation</li>
-                        <li>Flat panel detector technology</li>
-                        <li>Real-time verification imaging</li>
-                        <li>Mobile design for OR flexibility</li>
-                    </ul>
-                    <h3>Clinical Applications</h3>
-                    <ul>
-                        <li>Spine surgery navigation</li>
-                        <li>Cranial procedures</li>
-                        <li>Trauma surgery</li>
-                        <li>Orthopedic procedures</li>
-                    </ul>
+                    <h2>Description</h2>
+                    <h3>Procedure-specific workflows for the information you need</h3>
+                    <p>The O-arm™ surgical imaging system is an interoperative 2-D/3-D imaging device that can help confirm alignment and accuracy during spinal procedures.</p>
+                    <p>Because you can determine positioning before the operation ends, the O-arm™ system may help improve the chances of a successful procedure without the need for reoperation.</p>
                 </div>
-                <div class="specifications-card">
-                    <h3>Technical Specifications</h3>
-                    <div class="spec-list">
-                        <div class="spec-item"><span class="spec-name">Imaging</span><span class="spec-value">2D/3D</span></div>
-                        <div class="spec-item"><span class="spec-name">Gantry</span><span class="spec-value">O-shaped</span></div>
-                        <div class="spec-item"><span class="spec-name">Rotation</span><span class="spec-value">360°</span></div>
-                        <div class="spec-item"><span class="spec-name">Integration</span><span class="spec-value">StealthStation</span></div>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-features-section">
+        <div class="section-container">
+            <h2>Features</h2>
+            <div class="feature-block-text">
+                <h3>Superior image quality</h3>
+                <p>With the ability to perform both 2-D and 3-D scans, the O-arm™ generates exceptional and versatile images that assist in surgical planning, validate accurate placement during procedures, and facilitate post-operative positioning evaluation.</p>
+                <p>Gain confidence across the entire spinal procedural range with the superior volume and power of the O-arm™ system:
+                    <ul class="circle-bullets">
+                        <li>Obtain highly detailed images with a full 360-degree rotation around the patient.</li>
+                        <li>Image a patient’s entire pelvis with a wide 40 cm field of view.</li>
+                        <li>Accommodate challenging procedures involving heavier patients or individuals with unique anatomical characteristics using the powerful generator within the O-arm™ system.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="feature-block-text">
+                <h3>Get the image clarity you deserve without any compromises to your surgical workflow.</h3>
             </div>
         </div>
     </section>
@@ -106,25 +114,23 @@
         </div>
     </footer>
 
-    <div class="zoom-overlay" id="zoomOverlay">
-        <button class="zoom-close" id="zoomClose">&times;</button>
-        <img src="oarm.png" alt="O-arm Imaging System" class="zoom-image">
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <span class="modal-close">&times;</span>
+        <img id="modalImage" class="modal-content" alt="Zoomed product image">
     </div>
 
     <script src="../../script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mainImg = document.getElementById('mainProductImage');
-            const overlay = document.getElementById('zoomOverlay');
-            const closeBtn = document.getElementById('zoomClose');
-            if (mainImg && overlay) {
-                mainImg.addEventListener('click', () => { overlay.classList.add('active'); document.body.style.overflow = 'hidden'; });
-                const closeZoom = () => { overlay.classList.remove('active'); document.body.style.overflow = ''; };
-                closeBtn.addEventListener('click', closeZoom);
-                overlay.addEventListener('click', (e) => { if (e.target === overlay) closeZoom(); });
-                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeZoom(); });
-            }
-        });
+        function openImageModal(imageSrc) {
+            document.getElementById('imageModal').style.display = 'flex';
+            document.getElementById('modalImage').src = imageSrc;
+            document.body.style.overflow = 'hidden';
+        }
+        function closeImageModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeImageModal(); });
     </script>
 </body>
 </html>
