@@ -373,12 +373,23 @@
     }
 }
 
-/* Active nav state */
-.nav-links a.active {
+/* Active nav state - dark navbar (in hero area) */
+.navbar:not(.scrolled) .nav-links a.active {
+    color: #ffffff !important;
+}
+
+.navbar:not(.scrolled) .nav-links a.active::after {
+    width: 100%;
+    background: #ffffff;
+}
+
+/* Active nav state - white navbar (scrolled) */
+.navbar.scrolled .nav-links a.active {
     color: var(--color-primary) !important;
 }
 
-.nav-links a.active::after {
+.navbar.scrolled .nav-links a.active::after {
     width: 100%;
+    background: var(--color-primary);
 }
 
