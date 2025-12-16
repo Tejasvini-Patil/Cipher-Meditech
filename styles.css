@@ -903,7 +903,7 @@ h4 { font-size: 1.125rem; }
    ================================ */
 .about {
     padding: var(--space-4xl) 0;
-    background: var(--color-off-white);
+    background:linear-gradient(135deg, var(--color-primary) 0%, #0a1929 100%);
 }
 
 .about-grid {
@@ -911,6 +911,23 @@ h4 { font-size: 1.125rem; }
     grid-template-columns: 1fr 1.2fr;
     gap: var(--space-3xl);
     align-items: center;
+}
+
+.about .section-tag {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-md);
+}
+
+.about .section-title {
+    color: var(--color-white);
 }
 
 .about-visual {
@@ -942,7 +959,7 @@ h4 { font-size: 1.125rem; }
 .image-frame {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--color-gray-100) 0%, var(--color-gray-200) 100%);
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-gray-200) 100%);
     border-radius: var(--radius-xl);
     display: flex;
     align-items: center;
@@ -971,7 +988,7 @@ h4 { font-size: 1.125rem; }
 }
 
 .about-description {
-    color: var(--color-gray-500);
+    color: var(--color-white);
     margin-bottom: var(--space-lg);
     font-size: 1.0625rem;
     line-height: 1.8;
@@ -989,8 +1006,8 @@ h4 { font-size: 1.125rem; }
     align-items: center;
     gap: var(--space-sm);
     padding: var(--space-sm) var(--space-md);
-    background: var(--color-white);
-    border: 1px solid var(--color-gray-200);
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
     border-radius: var(--radius-full);
 }
 
@@ -1639,4 +1656,5 @@ h4 { font-size: 1.125rem; }
     opacity: 1;
     transform: translateY(0);
 }
+
 
