@@ -1417,6 +1417,56 @@ h4 { font-size: 1.125rem; }
     margin-top: var(--space-md);
 }
 
+/* Contact Form Footer */
+.contact-form-footer {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+.contact-form-footer p {
+    font-size: 0.8125rem;
+    color: var(--color-gray-500);
+    margin-bottom: var(--space-xs);
+}
+
+.contact-form-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.contact-form-links a {
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.contact-form-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-form-links .divider {
+    color: var(--color-gray-400);
+}
+
+@media (max-width: 480px) {
+    .contact-form-links {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+    
+    .contact-form-links .divider {
+        display: none;
+    }
+    
+    .contact-form-links a {
+        font-size: 0.8125rem;
+    }
+}
+
 /* ================================
    FOOTER
    ================================ */
