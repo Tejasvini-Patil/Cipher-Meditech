@@ -429,6 +429,79 @@
     }
 }
 
+/* ================================
+   COMING SOON / WORK IN PROGRESS BANNER
+   ================================ */
+.coming-soon-banner {
+    background: linear-gradient(135deg, #fff9e6 0%, #fff3cc 100%);
+    border: 2px dashed var(--color-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-3xl) var(--space-2xl);
+    text-align: center;
+    margin: var(--space-2xl) 0;
+}
+
+.coming-soon-banner .banner-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-lg);
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse-icon 2s infinite;
+}
+
+.coming-soon-banner .banner-icon svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+@keyframes pulse-icon {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.coming-soon-banner h3 {
+    font-size: 1.75rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-md);
+}
+
+.coming-soon-banner p {
+    color: var(--color-gray-600);
+    font-size: 1.0625rem;
+    max-width: 500px;
+    margin: 0 auto var(--space-lg);
+    line-height: 1.7;
+}
+
+.coming-soon-banner .btn {
+    margin-top: var(--space-md);
+}
+
+@media (max-width: 768px) {
+    .coming-soon-banner {
+        padding: var(--space-2xl) var(--space-lg);
+    }
+    
+    .coming-soon-banner h3 {
+        font-size: 1.5rem;
+    }
+    
+    .coming-soon-banner .banner-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .coming-soon-banner .banner-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 /* Active nav state - dark navbar (in hero area) */
 .navbar:not(.scrolled) .nav-links a.active {
     color: #ffffff !important;
