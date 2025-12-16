@@ -1658,6 +1658,112 @@ h4 { font-size: 1.125rem; }
 }
 
 /* ================================
+   LARGE SCREEN ENHANCEMENTS (1400px+)
+   ================================ */
+@media (min-width: 1400px) {
+    .section-container,
+    .nav-container,
+    .footer-container {
+        max-width: 1400px;
+    }
+    
+    .hero-container {
+        max-width: 1320px;
+    }
+    
+    .hero-card {
+        gap: var(--space-2xl);
+    }
+    
+    .hero-title {
+        font-size: 2.75rem;
+    }
+    
+    .hero-description {
+        font-size: 1.0625rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+    
+    .product-card {
+        padding: var(--space-2xl) var(--space-xl);
+    }
+    
+    .features-grid,
+    .about-grid,
+    .contact-grid {
+        gap: var(--space-4xl);
+    }
+    
+    .footer-main {
+        gap: var(--space-4xl);
+    }
+}
+
+@media (min-width: 1600px) {
+    .section-container,
+    .nav-container,
+    .footer-container {
+        max-width: 1520px;
+    }
+    
+    .hero-container {
+        max-width: 1440px;
+    }
+    
+    .hero-card-content {
+        padding: var(--space-4xl);
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-2xl);
+    }
+    
+    .section-header {
+        max-width: 800px;
+    }
+    
+    h2 {
+        font-size: clamp(2rem, 3vw, 3.5rem);
+    }
+}
+
+@media (min-width: 1920px) {
+    .section-container,
+    .nav-container,
+    .footer-container {
+        max-width: 1680px;
+    }
+    
+    .hero-container {
+        max-width: 1560px;
+    }
+    
+    .hero-card-content {
+        padding: var(--space-4xl) 5rem;
+    }
+    
+    .hero-image {
+        min-height: 550px;
+    }
+    
+    .careers {
+        min-height: 700px;
+    }
+    
+    .careers-title {
+        font-size: 4rem;
+    }
+}
+
+/* ================================
    FLOATING WHATSAPP BUTTON
    ================================ */
 .whatsapp-float {

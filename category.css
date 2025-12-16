@@ -373,6 +373,62 @@
     }
 }
 
+/* ================================
+   LARGE SCREEN ENHANCEMENTS (1400px+)
+   ================================ */
+@media (min-width: 1400px) {
+    .category-hero {
+        padding: 160px 0 80px;
+    }
+    
+    .category-title {
+        font-size: 4.5rem;
+    }
+    
+    .category-description {
+        max-width: 800px;
+        font-size: 1.125rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: var(--space-2xl);
+    }
+    
+    .product-info {
+        padding: var(--space-xl);
+    }
+    
+    .product-name {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .filter-buttons {
+        gap: var(--space-md);
+    }
+    
+    .filter-btn {
+        padding: 12px 22px;
+        font-size: 0.9375rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .category-hero {
+        padding: 180px 0 100px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 /* Active nav state - dark navbar (in hero area) */
 .navbar:not(.scrolled) .nav-links a.active {
     color: #ffffff !important;
