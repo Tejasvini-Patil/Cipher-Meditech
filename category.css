@@ -522,3 +522,15 @@
     background: var(--color-primary);
 }
 
+/* Mobile: Ensure active link is always visible (fix white-on-white issue) */
+@media (max-width: 768px) {
+    .navbar .nav-links a.active,
+    .navbar:not(.scrolled) .nav-links a.active {
+        color: var(--color-primary) !important;
+    }
+    
+    .navbar:not(.scrolled) .nav-links a.active::after {
+        background: var(--color-primary);
+    }
+}
+
