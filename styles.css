@@ -1015,6 +1015,21 @@ h4 { font-size: 1.125rem; }
     color: var(--color-accent);
 }
 
+.about-btn {
+    margin-top: var(--space-xl);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.about-btn svg {
+    transition: transform var(--transition-fast);
+}
+
+.about-btn:hover svg {
+    transform: translateX(4px);
+}
+
 .value-text {
     font-size: 0.875rem;
     font-weight: 500;
