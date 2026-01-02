@@ -65,37 +65,26 @@
     object-position: center;
 }
 
-.about-stats {
+.about-stats-logo {
     position: absolute;
-    bottom: 40px;
+    bottom: 80px;
     right: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
     display: flex;
-    background: linear-gradient(135deg, rgba(26, 68, 112, 0.95) 0%, rgba(45, 27, 105, 0.95) 100%);
-    backdrop-filter: blur(10px);
-    padding: 30px 50px;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
-.stat-item {
-    text-align: left;
-}
-
-.stat-number {
+.stats-logo-img {
+    width: 300px;
+    height: auto;
     display: block;
-    font-family: var(--font-display);
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: var(--color-white);
-    line-height: 1;
-    margin-bottom: var(--space-sm);
-    letter-spacing: -0.02em;
-}
-
-.stat-text {
-    font-size: 0.8125rem;
-    color: rgba(255, 255, 255, 0.85);
-    line-height: 1.5;
-    font-weight: 400;
+    opacity: 0.9;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .key-facts-link {

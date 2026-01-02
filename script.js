@@ -15,20 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
  * Preloader functionality
  */
 function initPreloader() {
+    // Check if preloader exists
     const preloader = document.getElementById('preloader');
     if (!preloader) return;
 
     const hidePreloader = () => {
         setTimeout(() => {
             preloader.classList.add('hidden');
-        }, 400);
+        }, 500); // 500ms delay for branding
     };
 
     if (document.readyState === 'complete') {
         hidePreloader();
     } else {
         window.addEventListener('load', hidePreloader);
-        // Fallback in case load event doesn't fire or is missed
+        // Fallback
         setTimeout(hidePreloader, 3000);
     }
 }
