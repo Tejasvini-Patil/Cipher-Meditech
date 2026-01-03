@@ -8,7 +8,31 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initContactForm();
     initSmoothScroll();
+    initPreloader();
 });
+
+/**
+ * Preloader functionality
+ */
+function initPreloader() {
+    // Check if preloader exists
+    const preloader = document.getElementById('preloader');
+    if (!preloader) return;
+
+    const hidePreloader = () => {
+        setTimeout(() => {
+            preloader.classList.add('hidden');
+        }, 500); // 500ms delay for branding
+    };
+
+    if (document.readyState === 'complete') {
+        hidePreloader();
+    } else {
+        window.addEventListener('load', hidePreloader);
+        // Fallback
+        setTimeout(hidePreloader, 3000);
+    }
+}
 
 /**
  * Navigation functionality
@@ -48,7 +72,7 @@ function initNavigation() {
     mobileMenuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         mobileMenuBtn.classList.toggle('active');
-        
+
         // Animate hamburger to X
         const spans = mobileMenuBtn.querySelectorAll('span');
         if (mobileMenuBtn.classList.contains('active')) {
@@ -132,15 +156,15 @@ function initScrollAnimations() {
  */
 function initContactForm() {
     const form = document.getElementById('contactForm');
-    
+
     if (form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Collect form data
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
-            
+
             // Build email body
             const subject = `Inquiry from ${data.name} - Cipher Meditech Website`;
             const body = `Hello Cipher Meditech Team,
@@ -158,18 +182,18 @@ Sent from Cipher Meditech website contact form`;
 
             // Create mailto link and open email client
             const mailtoLink = `mailto:rs.sales@ciphermeditech.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            
+
             // Try multiple methods to open email
             const mailWindow = window.open(mailtoLink, '_self');
-            
+
             // Fallback if window.open doesn't work
             if (!mailWindow) {
                 window.location.href = mailtoLink;
             }
-            
+
             // Show notification
             showNotification('Opening your email client...', 'success');
-            
+
             // Reset form after a short delay
             setTimeout(() => {
                 form.reset();
@@ -182,7 +206,7 @@ Sent from Cipher Meditech website contact form`;
             input.addEventListener('blur', () => {
                 validateInput(input);
             });
-            
+
             input.addEventListener('input', () => {
                 if (input.classList.contains('error')) {
                     validateInput(input);
@@ -197,7 +221,7 @@ Sent from Cipher Meditech website contact form`;
  */
 function validateInput(input) {
     const isValid = input.checkValidity();
-    
+
     if (!isValid && input.value) {
         input.classList.add('error');
         input.style.borderColor = '#dc3545';
@@ -205,7 +229,7 @@ function validateInput(input) {
         input.classList.remove('error');
         input.style.borderColor = '';
     }
-    
+
     return isValid;
 }
 
@@ -218,7 +242,7 @@ function showNotification(message, type = 'info') {
     if (existing) {
         existing.remove();
     }
-    
+
     // Create notification element
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
@@ -226,7 +250,7 @@ function showNotification(message, type = 'info') {
         <span>${message}</span>
         <button class="notification-close">&times;</button>
     `;
-    
+
     // Add styles
     Object.assign(notification.style, {
         position: 'fixed',
@@ -245,7 +269,7 @@ function showNotification(message, type = 'info') {
         maxWidth: '400px',
         fontFamily: 'inherit'
     });
-    
+
     // Add animation keyframes if not exists
     if (!document.querySelector('#notification-styles')) {
         const style = document.createElement('style');
@@ -274,16 +298,16 @@ function showNotification(message, type = 'info') {
         `;
         document.head.appendChild(style);
     }
-    
+
     document.body.appendChild(notification);
-    
+
     // Close button functionality
     const closeBtn = notification.querySelector('.notification-close');
     closeBtn.addEventListener('click', () => {
         notification.style.animation = 'slideOut 0.3s ease';
         setTimeout(() => notification.remove(), 300);
     });
-    
+
     // Auto remove after 5 seconds
     setTimeout(() => {
         if (notification.parentNode) {
@@ -302,11 +326,11 @@ function initSmoothScroll() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 const navHeight = document.querySelector('.navbar').offsetHeight;
                 const targetPosition = targetElement.offsetTop - navHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -320,11 +344,11 @@ function initSmoothScroll() {
  * Product card hover effects enhancement
  */
 document.querySelectorAll('.product-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
+    card.addEventListener('mouseenter', function () {
         this.style.zIndex = '10';
     });
-    
-    card.addEventListener('mouseleave', function() {
+
+    card.addEventListener('mouseleave', function () {
         this.style.zIndex = '1';
     });
 });
@@ -348,7 +372,7 @@ if ('loading' in HTMLImageElement.prototype) {
             }
         });
     });
-    
+
     document.querySelectorAll('img[data-src]').forEach(img => {
         imageObserver.observe(img);
     });
@@ -375,7 +399,7 @@ window.addEventListener('resize', debounce(() => {
     if (window.innerWidth > 768) {
         const navLinks = document.querySelector('.nav-links');
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        
+
         if (navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
             mobileMenuBtn.classList.remove('active');

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,31 @@
     <link rel="stylesheet" href="styles.css?v=9">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="assets/images/logo.png" alt="Cipher Meditech Info" class="preloader-img">
+        </div>
+    </div>
+
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">
-                <img src="logo.png" alt="Cipher Meditech" class="logo-img" style="display: block !important; height: 50px; width: auto;">
+                <img src="assets/images/logo.png" alt="Cipher Meditech" class="logo-img"
+                    style="display: block !important; height: 50px; width: auto;">
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#partners">Products</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#careers">Careers</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -39,25 +52,33 @@
         </div>
         <div class="hero-container">
             <div class="hero-card">
-                <img src="logo.png" alt="Cipher Meditech" class="hero-card-logo">
+                <img src="assets/images/logo.png" alt="Cipher Meditech" class="hero-card-logo">
                 <div class="hero-card-content">
                     <div class="hero-badge">
-                        <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                         Decoding Healthcare
                     </div>
                     <h1 class="hero-title">
                         Quality Medical Devices for Better Patient Outcomes
                     </h1>
                     <p class="hero-description">
-                        Cipher Meditech LLP partners with leading healthcare institutions to deliver cutting-edge medical technology. From ENT to Neurosurgery, we provide solutions that make a difference.
+                        Cipher Meditech LLP partners with leading healthcare institutions to deliver cutting-edge
+                        medical technology. From ENT to Neurosurgery, we provide solutions that make a difference.
                     </p>
                     <a href="#products" class="hero-link">
                         Explore Products
-                        <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8l4 4-4 4M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 8l4 4-4 4M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
                     </a>
                 </div>
                 <div class="hero-card-image">
-                    <img src="homepage.png" alt="Healthcare - Improving Lives" class="hero-image">
+                    <img src="assets/images/homepage.png" alt="Healthcare - Improving Lives" class="hero-image">
                 </div>
             </div>
         </div>
@@ -84,14 +105,14 @@
             </div>
         </div>
     </section>
-    
+
     <section class="products" id="products">
         <div class="section-container">
             <div class="section-header">
                 <span class="section-tag">Our Portfolio</span>
                 <h2 class="section-title">Medical Device Categories</h2>
                 <p class="section-subtitle">
-                    We offer a comprehensive range of medical devices from world-renowned manufacturers, 
+                    We offer a comprehensive range of medical devices from world-renowned manufacturers,
                     ensuring quality and reliability for every healthcare need.
                 </p>
             </div>
@@ -101,19 +122,25 @@
                 <div class="product-card" data-category="ent">
                     <div class="card-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="3"/>
-                            <path d="M20 24c0-2 2-4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M32 36v16M24 44h16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                            <circle cx="32" cy="24" r="4" fill="currentColor"/>
+                            <circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="3" />
+                            <path d="M20 24c0-2 2-4 4-4" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M32 36v16M24 44h16" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" />
+                            <circle cx="32" cy="24" r="4" fill="currentColor" />
                         </svg>
                     </div>
                     <h3 class="card-title">ENT</h3>
                     <p class="card-description">
-                        Comprehensive range of Ear, Nose & Throat devices and instruments for diagnosis and surgical procedures.
+                        Comprehensive range of Ear, Nose & Throat devices and instruments for diagnosis and surgical
+                        procedures.
                     </p>
-                    <a href="ent.html" class="card-link">
+                    <a href="products/ent.html" class="card-link">
                         <span>View Products</span>
-                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </a>
                 </div>
 
@@ -121,19 +148,23 @@
                 <div class="product-card" data-category="neurosurgery">
                     <div class="card-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="28" r="16" stroke="currentColor" stroke-width="3"/>
-                            <path d="M24 28c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="2"/>
-                            <path d="M28 24v8M36 24v8M32 28v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M26 48h12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="32" cy="28" r="16" stroke="currentColor" stroke-width="3" />
+                            <path d="M24 28c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="2" />
+                            <path d="M28 24v8M36 24v8M32 28v12" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M26 48h12" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                         </svg>
                     </div>
                     <h3 class="card-title">Neuro Surgery</h3>
                     <p class="card-description">
                         Advanced neurosurgical instruments and equipment for brain and spinal cord surgical procedures.
                     </p>
-                    <a href="neurosurgery.html" class="card-link">
+                    <a href="products/neurosurgery.html" class="card-link">
                         <span>View Products</span>
-                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </a>
                 </div>
 
@@ -141,18 +172,22 @@
                 <div class="product-card" data-category="neurology">
                     <div class="card-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 32h8l4-12 8 24 4-12h8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="32" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
-                            <path d="M28 52h8M32 44v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 32h8l4-12 8 24 4-12h8" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="32" cy="16" r="8" stroke="currentColor" stroke-width="2" />
+                            <path d="M28 52h8M32 44v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
                     <h3 class="card-title">Neurology</h3>
                     <p class="card-description">
                         Diagnostic and therapeutic devices for neurological conditions, monitoring, and treatment.
                     </p>
-                    <a href="neurology.html" class="card-link">
+                    <a href="products/neurology.html" class="card-link">
                         <span>View Products</span>
-                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </a>
                 </div>
 
@@ -160,19 +195,23 @@
                 <div class="product-card" data-category="neurovascular">
                     <div class="card-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="20" r="12" stroke="currentColor" stroke-width="3"/>
-                            <path d="M32 32v8M28 40c0 8 8 12 8 12M36 40c0 8-8 12-8 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M26 20h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="32" cy="20" r="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="20" r="12" stroke="currentColor" stroke-width="3" />
+                            <path d="M32 32v8M28 40c0 8 8 12 8 12M36 40c0 8-8 12-8 12" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" />
+                            <path d="M26 20h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="32" cy="20" r="4" stroke="currentColor" stroke-width="2" />
                         </svg>
                     </div>
                     <h3 class="card-title">Neuro-Vascular</h3>
                     <p class="card-description">
                         Specialized devices for cerebrovascular interventions, stroke treatment, and vascular access.
                     </p>
-                    <a href="neurovascular.html" class="card-link">
+                    <a href="products/neurovascular.html" class="card-link">
                         <span>View Products</span>
-                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </a>
                 </div>
 
@@ -180,20 +219,24 @@
                 <div class="product-card" data-category="spinal-ortho">
                     <div class="card-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M32 8v48" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                            <rect x="24" y="12" width="16" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <rect x="24" y="24" width="16" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <rect x="24" y="36" width="16" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 48h24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M32 8v48" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <rect x="24" y="12" width="16" height="8" rx="2" stroke="currentColor" stroke-width="2" />
+                            <rect x="24" y="24" width="16" height="8" rx="2" stroke="currentColor" stroke-width="2" />
+                            <rect x="24" y="36" width="16" height="8" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M20 48h24" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                         </svg>
                     </div>
                     <h3 class="card-title">Spinal & Orthopaedic</h3>
                     <p class="card-description">
-                        Complete range of spinal implants and orthopaedic devices for spine surgery and musculoskeletal care.
+                        Complete range of spinal implants and orthopaedic devices for spine surgery and musculoskeletal
+                        care.
                     </p>
-                    <a href="spinal-ortho.html" class="card-link">
+                    <a href="products/spinal-ortho.html" class="card-link">
                         <span>View Products</span>
-                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -206,20 +249,21 @@
             <div class="about-grid">
                 <div class="about-visual">
                     <div class="about-image">
-                        <img src="owen-beard-DK8jXx1B-1c-unsplash.jpg" alt="Medical X-ray Imaging" class="about-photo">
+                        <img src="assets/images/owen-beard-DK8jXx1B-1c-unsplash.jpg" alt="Medical X-ray Imaging" class="about-photo">
                     </div>
                 </div>
                 <div class="about-content">
                     <span class="section-tag">About Us</span>
                     <h2 class="section-title">Committed to Excellence in Healthcare</h2>
                     <p class="about-description">
-                        Cipher Meditech LLP was founded in 2019 with a vision to bridge the gap between world-class medical 
-                        technology and healthcare providers. We are committed to improving patient outcomes by ensuring 
+                        Cipher Meditech LLP was founded in 2019 with a vision to bridge the gap between world-class
+                        medical
+                        technology and healthcare providers. We are committed to improving patient outcomes by ensuring
                         access to the best medical devices available.
                     </p>
                     <p class="about-description">
-                        Our team of experienced professionals works closely with hospitals, clinics, and healthcare 
-                        institutions to understand their unique needs and provide tailored solutions. We pride ourselves 
+                        Our team of experienced professionals works closely with hospitals, clinics, and healthcare
+                        institutions to understand their unique needs and provide tailored solutions. We pride ourselves
                         on our strong relationships with both customers and manufacturers.
                     </p>
                     <div class="about-values">
@@ -240,6 +284,13 @@
                             <span class="value-text">Service</span>
                         </div>
                     </div>
+                    <a href="about.html" class="btn btn-primary about-btn">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -253,10 +304,10 @@
                     <span class="section-tag">Why Cipher Meditech</span>
                     <h2 class="section-title">Your Trusted Partner in Healthcare</h2>
                     <p class="features-description">
-                        With years of experience in the medical devices industry, we understand the critical importance 
+                        With years of experience in the medical devices industry, we understand the critical importance
                         of quality, reliability, and timely service in healthcare.
                     </p>
-                    
+
                     <div class="feature-list">
                         <div class="feature-item">
                             <div class="feature-icon">✓</div>
@@ -309,7 +360,7 @@
     <!-- Careers Section -->
     <section class="careers" id="careers">
         <div class="careers-bg">
-            <img src="collab.png" alt="Team Collaboration" class="careers-bg-image">
+            <img src="assets/images/collab.png" alt="Team Collaboration" class="careers-bg-image">
             <div class="careers-overlay"></div>
         </div>
         <div class="careers-container">
@@ -321,7 +372,11 @@
                 </p>
                 <a href="mailto:careers@ciphermeditech.com" class="careers-link">
                     Join the team
-                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8l4 4-4 4M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 8l4 4-4 4M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
                 </a>
             </div>
         </div>
@@ -335,21 +390,25 @@
                     <span class="section-tag">Get in Touch</span>
                     <h2 class="section-title">Let's Discuss Your Requirements</h2>
                     <p class="contact-description">
-                        Whether you're looking for specific medical devices or need guidance on the right solutions 
+                        Whether you're looking for specific medical devices or need guidance on the right solutions
                         for your healthcare facility, our team is here to help.
                     </p>
-                    
+
                     <div class="office-locations">
                         <!-- Hyderabad Office -->
                         <div class="office-card">
                             <h4 class="office-title">
-                                <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                                </svg>
                                 Hyderabad Office
                             </h4>
                             <div class="office-details">
                                 <p class="office-address">
-                                    123 Healthcare Plaza, Banjara Hills<br>
-                                    Hyderabad, Telangana 500034
+                                    Unit 503, Srinagar Colony<br>
+                                    Hyderabad-500073
                                 </p>
                                 <p class="office-contact">
                                     <strong>Phone:</strong> +91 9959900861<br>
@@ -361,7 +420,11 @@
                         <!-- Bangalore Office -->
                         <div class="office-card">
                             <h4 class="office-title">
-                                <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                                </svg>
                                 Bangalore Office
                             </h4>
                             <div class="office-details">
@@ -380,7 +443,11 @@
                     <!-- Email -->
                     <div class="contact-email">
                         <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    stroke="currentColor" stroke-width="2" />
+                                <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" />
+                            </svg>
                         </div>
                         <div class="contact-text">
                             <h4>Email Us</h4>
@@ -388,7 +455,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form-wrapper">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
@@ -409,16 +476,25 @@
                         </div>
                         <div class="form-group full-width">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us about your requirements..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">
                             <span>Send Message</span>
-                            <svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </button>
                     </form>
-                    <p style="text-align: center; margin-top: 20px; font-size: 13px; color: #888;">
-                        Or contact us directly at <a href="mailto:rs.sales@ciphermeditech.com" style="color: #1a4470; font-weight: 500;">info@ciphermeditech.com</a> | <a href="tel:+919902096645" style="color: #1a4470; font-weight: 500;">+91 9902096645</a>
-                    </p>
+                    <div class="contact-form-footer">
+                        <p>Or contact us directly at</p>
+                        <div class="contact-form-links">
+                            <a href="mailto:info@ciphermeditech.com">info@ciphermeditech.com</a>
+                            <span class="divider">|</span>
+                            <a href="tel:+919902096645">+91 9902096645</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -430,7 +506,7 @@
             <div class="footer-main">
                 <div class="footer-brand">
                     <a href="#home" class="logo">
-                        <img src="logo.png" alt="Cipher Meditech" class="logo-img logo-img-sm">
+                        <img src="assets/images/logo.png" alt="Cipher Meditech" class="logo-img logo-img-sm">
                     </a>
                     <p class="footer-tagline">
                         Decoding Healthcare — Your trusted partner for quality medical devices and healthcare solutions.
@@ -442,7 +518,7 @@
                         <ul>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#products">Products</a></li>
-                            <li><a href="#about">About Us</a></li>
+                            <li><a href="about.html">About Us</a></li>
                             <li><a href="#careers">Careers</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -450,11 +526,11 @@
                     <div class="footer-column">
                         <h4>Product Categories</h4>
                         <ul>
-                            <li><a href="ent.html">ENT</a></li>
-                            <li><a href="neurosurgery.html">Neuro Surgery</a></li>
-                            <li><a href="neurology.html">Neurology</a></li>
-                            <li><a href="neurovascular.html">Neuro-Vascular</a></li>
-                            <li><a href="spinal-ortho.html">Spinal & Orthopaedic</a></li>
+                            <li><a href="products/ent.html">ENT</a></li>
+                            <li><a href="products/neurosurgery.html">Neuro Surgery</a></li>
+                            <li><a href="products/neurology.html">Neurology</a></li>
+                            <li><a href="products/neurovascular.html">Neuro-Vascular</a></li>
+                            <li><a href="products/spinal-ortho.html">Spinal & Orthopaedic</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -473,7 +549,19 @@
         </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919902096645?text=Hello%20Cipher%20Meditech%2C%20I%20would%20like%20to%20inquire%20about%20your%20products."
+            target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958C9.726 30.916 12.74 32 16.004 32 24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.32 22.596c-.386 1.09-1.924 1.994-3.148 2.258-.838.178-1.932.32-5.618-1.208-4.716-1.954-7.748-6.746-7.984-7.06-.226-.314-1.9-2.532-1.9-4.83s1.2-3.428 1.628-3.898c.386-.424.908-.53 1.214-.53.148 0 .28.006.4.012.386.016.578.038.832.644.318.758 1.088 2.656 1.184 2.85.096.194.16.42.032.676-.12.264-.18.428-.358.66-.178.23-.374.514-.534.69-.178.2-.364.414-.156.812.208.39.924 1.522 1.984 2.466 1.366 1.216 2.516 1.592 2.872 1.768.356.178.564.148.772-.088.216-.246.924-1.076 1.17-1.446.246-.37.492-.308.828-.186.342.118 2.168 1.022 2.54 1.208.37.186.618.278.708.432.092.154.092.888-.294 1.97z" />
+            </svg>
+        </a>
+        <span class="tooltip">Chat with us!</span>
+    </div>
+
     <script src="script.js?v=2"></script>
 </body>
-</html>
 
+</html>
