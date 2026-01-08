@@ -6479,3 +6479,7 @@ h4 {
         grid-template-columns: 1fr;
     }
 }
+/* Hide step counter for cards with no-number class */
+.ch-card.no-number::after {
+    display: none;
+}
